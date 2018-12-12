@@ -1,12 +1,12 @@
 ## Description of Model
 ### Feature Engineering
 The following lists the features that we engineered for this model:
-●	Variables relating to candlestick approach: upper shadow, lower shadow, body
-○	Body = Close - Open
-○	Lower Shadow = Min(Open, Close) - Low
-○	Upper Shadow = High - Max(Open, Close)
-●	Momentum analysis, by deriving the 5-day moving average and the 15-day moving average  
-●	Lagged prices of the USD/ZAR over the last 5 days
+1. Variables relating to candlestick approach: upper shadow, lower shadow, body
+- Body = Close - Open
+- Lower Shadow = Min(Open, Close) - Low
+- Upper Shadow = High - Max(Open, Close)
+2. Momentum analysis, by deriving the 5-day moving average and the 15-day moving average  
+3. Lagged prices of the USD/ZAR over the last 5 days
 The former two features are technical indicators that are used in traditional analysis of forex. Different patterns found in the candlestick chart can be used to predict whether the direction of trend is going to change. Additionally, the relative position of 5-day moving average and 15-day moving average can predict the direction the price is going. For example, when the 5-day moving average crosses above the 15-day moving average, this indicates that price is rising and hence conveys a buy signal to the model. Similarly, the lagged prices of the USD/ZAR is a good feature as price at one point in time is naturally correlated to the neighbouring prices in that period of time. 
 
 ### Execution of Trade & Risk Management
